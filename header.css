@@ -145,10 +145,22 @@ footer {
     box-shadow: 0 4px 16px rgba(11, 60, 116, 0.1) !important;
   }
 
+  header#siteHeader > div {
+    justify-content: center !important;
+  }
+
+  header#siteHeader #brandLogo {
+    margin-left: auto !important;
+    margin-right: auto !important;
+    text-align: center !important;
+    justify-content: center !important;
+  }
+
   header#siteHeader .logo-title,
   header#siteHeader.header-scrolled .logo-title {
     color: #0B3C74 !important;
     text-shadow: none !important;
+    text-align: center !important;
   }
 
   header#siteHeader + section,
