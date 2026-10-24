@@ -1,4 +1,4 @@
-/* Vera Range Luxury Motion & Editorial Animations */
+/* HERQUACORE Corporate Motion & Scroll Animations */
 
 /* Smooth scroll & base easing variables */
 :root {
@@ -79,7 +79,7 @@ body.page-loaded {
 
 .editorial-hover:hover {
   transform: translateY(-6px);
-  box-shadow: 0 20px 40px -15px rgba(73, 18, 17, 0.15);
+  box-shadow: 0 20px 40px -15px rgba(11, 60, 116, 0.18);
 }
 
 /* Soft floating pulse for widgets */

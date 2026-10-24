@@ -1,4 +1,4 @@
-/* Header and Footer Dynamic Borders & Rounded Styling */
+/* Header and Footer Dynamic Borders & Business-Friendly Corporate Styling */
 
 /* Header Base */
 header#siteHeader {
@@ -6,95 +6,93 @@ header#siteHeader {
 }
 
 /* Header in NORMAL MODE (before scrolling):
-   Curved bottom corners with Deep Maroon border */
+   Curved bottom corners with Corporate Navy border */
 .header-transparent {
-  background-color: rgba(250, 250, 247, 0.96) !important; /* Soft Ivory/Linen backdrop */
+  background-color: rgba(255, 255, 255, 0.96) !important;
   backdrop-filter: blur(12px) !important;
   -webkit-backdrop-filter: blur(12px) !important;
-  border-bottom: 2.5px solid #491211 !important; /* Brand Deep Maroon border */
-  border-bottom-left-radius: 24px !important;
-  border-bottom-right-radius: 24px !important;
-  box-shadow: 0 4px 20px -4px rgba(73, 18, 17, 0.12) !important;
+  border-bottom: 2.5px solid #0B3C74 !important;
+  border-bottom-left-radius: 20px !important;
+  border-bottom-right-radius: 20px !important;
+  box-shadow: 0 4px 20px -4px rgba(11, 60, 116, 0.12) !important;
 }
 
-/* Seamless Header-to-Body Transition:
-   The section or article immediately following the header extends 24px behind
-   the header so the corner background perfectly matches the body/hero below */
+/* Seamless Header-to-Body Transition */
 header#siteHeader + section,
 header#siteHeader + article,
 header#siteHeader + main {
-  margin-top: -24px !important;
+  margin-top: -20px !important;
   position: relative !important;
   z-index: 10 !important;
 }
 
-/* Header when SCROLLED: solid Rich Maroon with Ivory border and rounded corners */
+/* Header when SCROLLED: solid Corporate Navy with White border and rounded corners */
 .header-scrolled {
-  background-color: rgba(73, 18, 17, 0.98) !important; /* Solid Rich Maroon */
+  background-color: rgba(11, 60, 116, 0.98) !important;
   backdrop-filter: blur(14px) !important;
   -webkit-backdrop-filter: blur(14px) !important;
-  border-bottom: 2px solid rgba(250, 250, 247, 0.9) !important;
-  border-bottom-left-radius: 24px !important;
-  border-bottom-right-radius: 24px !important;
-  box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.35) !important;
+  border-bottom: 2px solid rgba(217, 78, 40, 0.9) !important;
+  border-bottom-left-radius: 20px !important;
+  border-bottom-right-radius: 20px !important;
+  box-shadow: 0 10px 30px -10px rgba(7, 40, 79, 0.4) !important;
 }
 
-/* Normal Header Navigation Links: Deep Maroon (#491211) */
+/* Normal Header Navigation Links: Corporate Navy (#0B3C74) */
 .header-transparent nav a {
-  color: #491211 !important;
+  color: #0B3C74 !important;
   transition: color 0.2s ease !important;
 }
 
 .header-transparent nav a:hover {
-  color: #847949 !important; /* Vintage Olive on hover */
+  color: #D94E28 !important;
 }
 
-/* Active Page Indicator in Normal Mode: Deep Maroon underline */
+/* Active Page Indicator in Normal Mode */
 .header-transparent nav a.border-b,
 .header-transparent nav a[class*="border-b"] {
-  border-bottom-color: #491211 !important;
-  color: #491211 !important;
+  border-bottom-color: #D94E28 !important;
+  color: #0B3C74 !important;
 }
 
-/* Scrolled contrast states: works on ALL pages regardless of ID */
+/* Scrolled contrast states */
 .header-scrolled .logo-title,
 .header-scrolled #brandLogo .logo-title,
 .header-scrolled a span.logo-title {
-  color: #FAFAF7 !important;
-  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.35) !important;
+  color: #FFFFFF !important;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.25) !important;
 }
 
 .header-scrolled .logo-sub,
 .header-scrolled #brandLogo .logo-sub,
 .header-scrolled a span.logo-sub {
-  color: #D2CCBC !important;
+  color: #FFD2C4 !important;
 }
 
-/* Scrolled Header Navigation Links: Cream / Ivory (#FAFAF7) */
+/* Scrolled Header Navigation Links: Crisp White */
 .header-scrolled nav a {
-  color: #FAFAF7 !important;
+  color: #FFFFFF !important;
   transition: color 0.2s ease !important;
 }
 
 .header-scrolled nav a:hover {
-  color: #D2CCBC !important;
+  color: #FFD2C4 !important;
 }
 
-/* Active Page Indicator in Scrolled Mode: Cream / Ivory underline */
+/* Active Page Indicator in Scrolled Mode */
 .header-scrolled nav a.border-b,
 .header-scrolled nav a[class*="border-b"] {
-  border-bottom-color: #FAFAF7 !important;
-  color: #FAFAF7 !important;
+  border-bottom-color: #D94E28 !important;
+  color: #FFFFFF !important;
 }
 
 .header-scrolled button#mobileMenuBtn,
 .header-scrolled button#mobileMenuBtn i,
 .header-scrolled button#mobileMenuBtn svg {
-  color: #FAFAF7 !important;
-  stroke: #FAFAF7 !important;
+  color: #FFFFFF !important;
+  stroke: #FFFFFF !important;
 }
 
-/* Inquire Now CTA Button: pill rounded with contrast flip */
+/* CTA Button: pill rounded with contrast flip */
 .header-cta-btn {
   border-radius: 9999px !important;
   border: 1px solid transparent !important;
@@ -102,49 +100,47 @@ header#siteHeader + main {
 }
 
 .header-scrolled .header-cta-btn {
-  background-color: #FAFAF7 !important;
-  color: #491211 !important;
-  border: 1px solid rgba(255, 255, 255, 0.95) !important;
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2) !important;
+  background-color: #D94E28 !important;
+  color: #FFFFFF !important;
+  border: 1px solid rgba(255, 255, 255, 0.35) !important;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.25) !important;
 }
 
 .header-scrolled .header-cta-btn:hover {
-  background-color: #D2CCBC !important;
-  color: #360C0B !important;
+  background-color: #FFFFFF !important;
+  color: #0B3C74 !important;
 }
 
-/* Footer: Signature Deep Maroon (#491211) with rounded top corners
-   and seamless flush transition with the section directly above it */
+/* Footer: Corporate Navy (#0B3C74) with rounded top corners */
 footer {
   width: 100% !important;
   max-width: 100% !important;
-  margin-top: -24px !important;
+  margin-top: -20px !important;
   position: relative !important;
   z-index: 20 !important;
-  background-color: #491211 !important; /* Signature Deep Maroon */
-  color: #F7F3EE !important;
-  border-top: 1.5px solid rgba(250, 250, 247, 0.25) !important;
+  background-color: #0B3C74 !important;
+  color: #F4F7FB !important;
+  border-top: 2px solid #D94E28 !important;
   border-top-left-radius: 24px !important;
   border-top-right-radius: 24px !important;
   border-bottom-left-radius: 0 !important;
   border-bottom-right-radius: 0 !important;
-  padding-top: 1.65rem !important;
-  padding-bottom: 1.65rem !important;
-  box-shadow: 0 -6px 20px rgba(45, 11, 11, 0.15) !important;
+  padding-top: 1.75rem !important;
+  padding-bottom: 1.75rem !important;
+  box-shadow: 0 -6px 20px rgba(7, 40, 79, 0.18) !important;
 }
 
 /* Mobile Header (< 768px): Unified brand mark across all pages */
 @media (max-width: 767px) {
   header#siteHeader.header-transparent,
   .header-transparent {
-    background: transparent !important;
-    background-color: transparent !important;
-    backdrop-filter: none !important;
-    -webkit-backdrop-filter: none !important;
-    border: none !important;
-    border-bottom: none !important;
-    box-shadow: none !important;
-    border-radius: 0 !important;
+    background: rgba(255, 255, 255, 0.96) !important;
+    backdrop-filter: blur(12px) !important;
+    -webkit-backdrop-filter: blur(12px) !important;
+    border-bottom: 2px solid #0B3C74 !important;
+    border-bottom-left-radius: 16px !important;
+    border-bottom-right-radius: 16px !important;
+    box-shadow: 0 4px 16px rgba(11, 60, 116, 0.1) !important;
   }
 
   header#siteHeader + section,
@@ -153,36 +149,13 @@ footer {
     margin-top: 0 !important;
   }
 
-  /* Main homepage for mobile: header overlays the hero section so the hero background is used */
-  .home-page header#siteHeader.header-transparent {
-    position: relative !important;
-    z-index: 30 !important;
-  }
-
-  .home-page header#siteHeader.header-transparent + section {
-    margin-top: -4rem !important; /* -64px pulls the hero section right behind the mobile header */
-    position: relative !important;
-    z-index: 10 !important;
-  }
-
-  /* Since the hero section has dark cinematic photography/video, render logo in crisp ivory & linen */
-  .home-page header#siteHeader.header-transparent .logo-title {
-    color: #FAFAF7 !important;
-    text-shadow: 0 2px 12px rgba(0, 0, 0, 0.85) !important;
-  }
-
-  .home-page header#siteHeader.header-transparent .logo-sub {
-    color: #D2CCBC !important;
-    text-shadow: 0 1px 8px rgba(0, 0, 0, 0.85) !important;
-  }
-
-  /* Scrolled mobile header: compact, blurred deep maroon bar */
+  /* Scrolled mobile header: compact, blurred corporate navy bar */
   header#siteHeader.header-scrolled,
   .header-scrolled {
-    background-color: rgba(73, 18, 17, 0.96) !important;
+    background-color: rgba(11, 60, 116, 0.98) !important;
     backdrop-filter: blur(14px) !important;
     -webkit-backdrop-filter: blur(14px) !important;
-    border-bottom: 1.5px solid rgba(250, 250, 247, 0.8) !important;
+    border-bottom: 2px solid #D94E28 !important;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25) !important;
     border-bottom-left-radius: 16px !important;
     border-bottom-right-radius: 16px !important;
@@ -193,7 +166,7 @@ footer {
     display: none !important;
   }
 
-  /* MOBILE BOTTOM NAVBAR / FOOTER: Sits flush at bottom, rounded top corners with Rich Maroon styling */
+  /* MOBILE BOTTOM NAVBAR: Sits flush at bottom, rounded top corners in Corporate Navy */
   nav.mobile-bottom-navbar {
     position: fixed !important;
     bottom: 0 !important;
@@ -204,101 +177,88 @@ footer {
     border-top-right-radius: 20px !important;
     border-bottom-left-radius: 0 !important;
     border-bottom-right-radius: 0 !important;
-    background-color: rgba(73, 18, 17, 0.98) !important; /* Signature Rich Maroon */
+    background-color: rgba(11, 60, 116, 0.98) !important;
     backdrop-filter: blur(16px) !important;
     -webkit-backdrop-filter: blur(16px) !important;
-    border-top: 1.5px solid rgba(250, 250, 247, 0.3) !important;
+    border-top: 2px solid #D94E28 !important;
     border-left: none !important;
     border-right: none !important;
     border-bottom: none !important;
-    box-shadow: 0 -8px 24px rgba(0, 0, 0, 0.35) !important;
+    box-shadow: 0 -8px 24px rgba(7, 40, 79, 0.35) !important;
     padding-top: 9px !important;
     padding-bottom: max(10px, env(safe-area-inset-bottom)) !important;
   }
 
   nav.mobile-bottom-navbar a {
-    color: rgba(250, 250, 247, 0.7) !important;
+    color: rgba(255, 255, 255, 0.72) !important;
     transition: color 0.2s ease, transform 0.2s ease;
   }
 
   nav.mobile-bottom-navbar a.active-nav-item,
   nav.mobile-bottom-navbar a:hover {
-    color: #FAFAF7 !important; /* Luminous Ivory */
+    color: #FFFFFF !important;
     font-weight: 700 !important;
   }
 
+  nav.mobile-bottom-navbar a.active-nav-item i,
+  nav.mobile-bottom-navbar a.active-nav-item svg {
+    color: #FF7A59 !important;
+  }
+
   nav.mobile-bottom-navbar a.active-nav-item span {
-    color: #FAFAF7 !important;
+    color: #FFFFFF !important;
   }
 }
 
-/* ========================================================
-   HOMEPAGE HEADER IN LIGHT MODE (No Background Color)
-   ======================================================== */
-.home-page header#siteHeader.header-transparent,
-.home-page .header-transparent {
-  background: transparent !important;
-  background-color: transparent !important;
-  backdrop-filter: none !important;
-  -webkit-backdrop-filter: none !important;
-  border: none !important;
-  border-bottom: none !important;
-  box-shadow: none !important;
-  border-radius: 0 !important;
-}
-
-.home-page header#siteHeader + section {
-  margin-top: 0 !important;
-}
-
-/* Text flair & editorial shadows */
+/* Text flair & shadows */
 .text-flair-shadow {
-  text-shadow: 0 2px 10px rgba(73, 18, 17, 0.15);
-}
-
-h1.font-serif, h2.font-serif {
-  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
+  text-shadow: 0 2px 10px rgba(11, 60, 116, 0.1);
 }
 
 .hero-heading-shadow {
-  text-shadow: 0 4px 20px rgba(0, 0, 0, 0.6), 0 1px 3px rgba(0, 0, 0, 0.8);
+  text-shadow: 0 4px 20px rgba(0, 0, 0, 0.45), 0 1px 3px rgba(0, 0, 0, 0.6);
 }
 
-/* Decorative Maroon Image Frames (Gallery & Portfolio Images) */
-.gallery-card, .gallery-item {
-  border: 3px solid #491211 !important; /* Elegant Maroon frame */
-  border-radius: 14px !important; /* Subtle rounding */
-  padding: 3px !important; /* Editorial passe-partout mat gap */
-  background-color: #FAFAF7 !important;
-  box-shadow: 0 12px 28px -10px rgba(73, 18, 17, 0.18) !important;
-  transition: transform 0.4s ease, box-shadow 0.4s ease, border-color 0.4s ease !important;
-}
-
-.gallery-card:hover, .gallery-item:hover {
-  border-color: #847949 !important; /* Shifts to Vintage Olive on hover */
-  transform: translateY(-4px) !important;
-  box-shadow: 0 20px 38px -10px rgba(73, 18, 17, 0.28) !important;
-}
-
-/* Inner frame roundings */
-.gallery-card .slides-container, .gallery-item > div:first-child {
-  border-radius: 9px !important;
+/* Service & Feature Cards Framing */
+.service-card {
+  position: relative !important;
   overflow: hidden !important;
+  border: 1.5px solid #DCE7F3 !important;
+  border-radius: 20px !important;
+  background: linear-gradient(180deg, #FFFFFF 0%, #F9FBFE 100%) !important;
+  box-shadow: 0 8px 24px -6px rgba(11, 60, 116, 0.08) !important;
+  transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.35s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.35s ease !important;
 }
 
-/* Journal & Stories Cards: Decorative Maroon Framing */
-article, .blog-card {
-  border: 2px solid #491211 !important; /* Maroon border framing */
-  border-radius: 16px !important; /* Subtle rounded corners */
-  background-color: #FAFAF7 !important;
-  box-shadow: 0 10px 25px -8px rgba(73, 18, 17, 0.12) !important;
-  transition: transform 0.4s ease, box-shadow 0.4s ease, border-color 0.4s ease !important;
+.service-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, #0B3C74 0%, #0284C7 55%, #D94E28 100%);
+  opacity: 0.85;
+  transition: height 0.3s ease, opacity 0.3s ease;
 }
 
-article:hover, .blog-card:hover {
-  border-color: #847949 !important; /* Shifts to Vintage Olive on hover */
-  transform: translateY(-4px) !important;
-  box-shadow: 0 18px 36px -10px rgba(73, 18, 17, 0.22) !important;
+.service-card:hover {
+  border-color: #0B3C74 !important;
+  transform: translateY(-6px) !important;
+  box-shadow: 0 22px 40px -12px rgba(11, 60, 116, 0.2) !important;
+}
+
+.service-card:hover::before {
+  height: 6px;
+  opacity: 1;
+}
+
+.gallery-card, .gallery-item, article, .blog-card {
+  border: 2px solid #D8E4F0 !important;
+  border-radius: 16px !important;
+  background-color: #FFFFFF !important;
+  box-shadow: 0 10px 25px -8px rgba(11, 60, 116, 0.1) !important;
+  transition: transform 0.35s ease, box-shadow 0.35s ease, border-color 0.35s ease !important;
 }
 
 /* General CTA buttons rounding */

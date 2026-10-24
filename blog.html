@@ -1,17 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  
-  <title>Journal & Western Wedding Guides | Vera Range Photography Blog</title>
-  <meta name="description" content="Wedding planning tips, outfit guides, Ozarks elopement ideas, and real love stories from Vera Range Photography in Southwest Missouri." />
-  <meta name="keywords" content="Western wedding blog, Missouri elopement guide, couple session outfit ideas, Ozarks wedding photographer" />
-  <link rel="canonical" href="https://verarangephotography.com/blog.html" />
+  <title>Blog | HERQUACORE</title>
+  <meta name="description" content="Practical guides on borehole drilling, leak detection, and plumbing maintenance." />
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,600&family=Montserrat:wght@200;300;400;500;600;700&family=Pinyon+Script&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@500;600;700;800&display=swap" rel="stylesheet">
 
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="https://unpkg.com/lucide@latest"></script>
@@ -22,24 +19,24 @@
         extend: {
           colors: {
             brand: {
-              cherry: '#491211',
-              cherryDark: '#360c0b',
-              olive: '#847949',
-              oliveDark: '#4F4E39',
-              linen: '#D2CCBC',
-              linenLight: '#F7F3EE',
-              dark: '#1B1414',
-              ivory: '#FAFAF7',
+              cherry: '#0B3C74',
+              cherryDark: '#07284F',
+              olive: '#D94E28',
+              oliveDark: '#B53B1A',
+              sky: '#0284C7',
+              linen: '#D8E4F0',
+              linenLight: '#F4F7FB',
+              dark: '#0F172A',
+              ivory: '#FFFFFF',
             }
           },
           fontFamily: {
-            serif: ['"Cormorant Garamond"', 'serif'],
-            sans: ['"Montserrat"', 'sans-serif'],
-            script: ['"Pinyon Script"', 'cursive'],
+            serif: ['"Outfit"', 'sans-serif'],
+            sans: ['"Inter"', 'sans-serif'],
           },
           letterSpacing: {
-            'widest-plus': '0.25em',
-            'ultra': '0.35em',
+            'widest-plus': '0.16em',
+            'ultra': '0.22em',
           }
         }
       }
@@ -48,172 +45,198 @@
   <link rel="stylesheet" href="motion.css">
   <link rel="stylesheet" href="header.css">
 </head>
-
-<body class="bg-brand-linenLight text-brand-dark font-sans antialiased pb-24 md:pb-0">
-
+<body class="bg-brand-linenLight text-brand-dark font-sans antialiased overflow-x-hidden pb-24 md:pb-0">
   <!-- Header -->
   <header id="siteHeader" class="sticky top-0 z-50 transition-all duration-500 header-transparent">
-    <div class="w-full px-6 lg:px-12 h-16 sm:h-20 flex items-center justify-center md:justify-between">
-      <a href="index.html" id="brandLogo" class="group flex flex-col items-center md:items-start text-center md:text-left transition-colors duration-500">
-        <span class="font-serif tracking-ultra text-2xl lg:text-3xl text-brand-cherry uppercase font-medium logo-title transition-colors">VERA RANGE</span>
-        <span class="font-sans text-[9px] tracking-[0.3em] uppercase text-brand-olive font-semibold -mt-0.5 logo-sub transition-colors">Photography &bull; Est. 2022</span>
+    <div class="w-full px-5 sm:px-10 lg:px-16 h-16 sm:h-20 flex items-center justify-between">
+      <a href="index.html" id="brandLogo" class="group flex items-center text-left transition-colors duration-500">
+        <span class="font-serif tracking-wider text-xl sm:text-2xl lg:text-3xl text-brand-cherry uppercase font-extrabold logo-title transition-colors">HERQUACORE</span>
       </a>
 
-      <nav class="hidden md:flex items-center gap-9 ml-auto mr-8 text-[12px] tracking-widest-plus uppercase font-medium">
-        <a href="portfolio.html" class="text-brand-cherry hover:text-brand-olive transition-colors">Portfolio</a>
-        <a href="about.html" class="text-brand-cherry hover:text-brand-olive transition-colors">About</a>
-        <a href="services.html" class="text-brand-cherry hover:text-brand-olive transition-colors">Services</a>
-        <a href="blog.html" class="text-brand-cherry font-semibold border-b border-brand-cherry pb-1">Journal &amp; Stories</a>
-      </nav>
+      <div class="hidden md:flex items-center gap-8 ml-auto">
+        <nav class="flex items-center gap-8 text-xs tracking-widest uppercase font-semibold">
+          <a href="services.html" class="text-brand-cherry hover:text-brand-olive transition-colors">Services</a>
+          <a href="portfolio.html" class="text-brand-cherry hover:text-brand-olive transition-colors">Projects</a>
+          <a href="about.html" class="text-brand-cherry hover:text-brand-olive transition-colors">About</a>
+          <a href="blog.html" class="text-brand-cherry border-b-2 border-brand-olive pb-1">Blog</a>
+        </nav>
 
-      <div class="hidden md:flex items-center gap-4">
-        <a href="inquire.html" class="header-cta-btn rounded-full px-6 py-2.5 text-[11px] tracking-widest-plus uppercase font-semibold text-white bg-brand-cherry transition-all duration-300 hover:bg-brand-cherryDark shadow-sm hover:shadow-md">
-          Inquire Now
+        <a href="inquire.html" class="header-cta-btn inline-flex items-center justify-center rounded-full px-7 py-3 text-xs tracking-widest uppercase font-extrabold text-white bg-brand-cherry transition-all duration-300 hover:bg-brand-olive shadow-md">
+          Contact Us
+        </a>
+      </div>
+
+      <div class="flex md:hidden items-center ml-auto">
+        <a href="inquire.html" class="inline-flex items-center justify-center px-4 py-2 rounded-full bg-brand-cherry text-white text-[11px] font-extrabold tracking-wider uppercase shadow">
+          Contact Us
         </a>
       </div>
     </div>
   </header>
 
-  <!-- Hero Header -->
-  <section class="py-16 sm:py-24 bg-brand-linenLight border-b border-brand-linen/60 text-center motion-reveal">
-    <div class="max-w-4xl mx-auto px-6">
-      <span class="text-brand-olive text-[11px] tracking-ultra uppercase font-semibold block mb-3">The Journal</span>
-      <h1 class="font-serif text-5xl sm:text-6xl text-brand-cherry font-normal mb-4">Stories, Guides &amp; Inspiration</h1>
-      <p class="text-gray-600 text-sm sm:text-base max-w-xl mx-auto font-light leading-relaxed text-justify">
-        Curated advice on planning a Western luxury wedding, styling your couple photoshoot, and real sessions from the Ozarks to beyond.
+  <!-- Simple Page Header Banner -->
+  <section class="py-10 sm:py-14 bg-gradient-to-r from-brand-cherryDark to-brand-cherry text-white">
+    <div class="w-full px-5 sm:px-10 lg:px-16 flex flex-col md:flex-row md:items-end justify-between gap-4">
+      <div>
+        
+        <h1 class="font-serif text-3xl sm:text-5xl font-extrabold tracking-tight">Blog</h1>
+      </div>
+      <p class="text-sky-100 text-sm sm:text-base max-w-xl md:text-right">
+        Field guides on borehole drilling, leak detection, and plumbing maintenance.
       </p>
     </div>
   </section>
 
-  <!-- Featured Blog Post -->
-  <section class="py-16 bg-white border-b border-brand-linen/60 motion-reveal">
-    <div class="max-w-7xl mx-auto px-6 lg:px-12">
-      <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center bg-brand-linenLight p-6 sm:p-10 border border-brand-linen">
-        <div class="lg:col-span-7 aspect-video overflow-hidden">
-          <img src="https://static.showit.com/1200/eQVRQS7Ajan-5LEgOF3_Tw/339870/g0a0156.jpg" alt="Western Wedding Planning" class="w-full h-full object-cover">
+  <section class="py-14 sm:py-20 bg-white motion-reveal">
+    <div class="w-full px-5 sm:px-10 lg:px-16">
+      <!-- Featured Article Across Full Width -->
+      <a href="journal-western-wedding-guide.html" class="service-card group overflow-hidden grid grid-cols-1 lg:grid-cols-12 mb-12 cursor-pointer no-underline">
+        <div class="lg:col-span-6 relative h-64 sm:h-80 lg:h-96 overflow-hidden bg-brand-cherryDark">
+          <img src="assets/images/borehole-drilling.jpg" alt="Complete Guide to Borehole Drilling & Geophysical Survey" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+          <div class="absolute top-4 left-4">
+            <span class="px-3.5 py-1.5 rounded-full bg-brand-olive text-white text-[10px] tracking-widest uppercase font-extrabold">
+              Featured Guide
+            </span>
+          </div>
         </div>
-        <div class="lg:col-span-5 space-y-4">
-          <span class="text-[10px] tracking-ultra uppercase text-brand-olive font-semibold">Featured Story &bull; Wedding Guide</span>
-          <h2 class="font-serif text-3xl sm:text-4xl text-brand-cherry leading-tight">
-            How to Plan a Luxurious Western Wedding with Authentic Grit
+        <div class="lg:col-span-6 p-7 sm:p-12 flex flex-col justify-center">
+          <span class="text-xs text-brand-olive font-bold uppercase tracking-widest mb-2">Borehole Drilling & Survey</span>
+          <h2 class="font-serif text-2xl sm:text-4xl text-brand-cherry font-extrabold mb-4 group-hover:text-brand-olive transition-colors">
+            Complete Guide to Borehole Drilling & Geophysical Survey
           </h2>
-          <p class="text-xs sm:text-sm text-gray-600 leading-relaxed font-light text-justify">
-            Bringing elevated editorial elegance to rustic ranch roots. Tips on color harmonies (like black cherry and vintage olive), heirloom leather accessories, and golden hour timelines.
+          <p class="text-slate-600 text-sm sm:text-base leading-relaxed mb-6">
+            How pre-drilling aquifer surveys, proper PVC casing, and submersible pump sizing guarantee year-round clean water.
           </p>
-          <a href="journal-western-wedding-guide.html" class="inline-flex items-center gap-2 text-xs uppercase tracking-widest text-brand-cherry font-semibold hover:text-brand-olive pt-2">
-            <span>Read Complete Guide</span>
+          <div class="flex items-center gap-2 text-xs font-extrabold uppercase tracking-widest text-brand-cherry group-hover:text-brand-olive transition-colors">
+            <span>Read Full Article</span>
             <i data-lucide="arrow-right" class="w-4 h-4"></i>
-          </a>
+          </div>
         </div>
-      </div>
-    </div>
-  </section>
+      </a>
 
-  <!-- Grid of Articles -->
-  <section class="py-20 bg-brand-linenLight motion-reveal">
-    <div class="max-w-7xl mx-auto px-6 lg:px-12">
       <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
         
-        <!-- Post 1 -->
-        <article class="group bg-white border border-brand-linen p-6 rounded-2xl flex flex-col justify-between hover:border-brand-cherry transition-all" id="post-1" onclick="window.location='journal-western-wedding-guide.html'" class="cursor-pointer">
+        <a href="journal-western-wedding-guide.html" class="service-card group overflow-hidden flex flex-col justify-between cursor-pointer no-underline">
           <div>
-            <div class="aspect-video overflow-hidden mb-6 bg-brand-linen">
-              <img src="https://static.showit.com/1200/nAoW5Z9Yj_DLo0fom7lEGQ/339870/g0a1071.jpg" alt="Wedding Vows" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+            <div class="relative h-56 overflow-hidden bg-brand-cherryDark">
+              <img src="assets/images/borehole-drilling.jpg" alt="Complete Guide to Borehole Drilling & Geophysical Survey" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
             </div>
-            <span class="text-[10px] tracking-widest uppercase text-brand-olive font-semibold block mb-2">Planning</span>
-            <h3 class="font-serif text-2xl text-brand-cherry mb-3">10 Must-Have Shots for Your Western Wedding Day</h3>
-            <p class="text-xs text-gray-600 leading-relaxed font-light mb-6 text-justify">
-              From the boots and spurs to the wide landscape sunset portraits, here is how to capture memories that tell the true story.
-            </p>
+            <div class="p-7">
+              <span class="text-[11px] tracking-widest uppercase text-brand-olive font-bold block mb-2">Borehole Drilling & Survey</span>
+              <h3 class="font-serif text-xl sm:text-2xl text-brand-cherry font-bold mb-3 group-hover:text-brand-olive transition-colors">
+                Complete Guide to Borehole Drilling & Geophysical Survey
+              </h3>
+              <p class="text-slate-600 text-sm leading-relaxed">
+                How pre-drilling aquifer surveys, proper PVC casing, and submersible pump sizing guarantee year-round clean water.
+              </p>
+            </div>
           </div>
-          <a href="journal-western-wedding-guide.html" class="text-[11px] tracking-widest uppercase font-semibold text-brand-cherry hover:underline">Read Article &rarr;</a>
-        </article>
-
-        <!-- Post 2 -->
-        <article class="group bg-white border border-brand-linen p-6 rounded-2xl flex flex-col justify-between hover:border-brand-cherry transition-all" id="post-2" onclick="window.location='journal-what-to-wear-guide.html'" class="cursor-pointer">
+          <div class="px-7 pb-7 pt-4 border-t border-slate-100 flex items-center justify-between">
+            <span class="text-xs font-extrabold uppercase tracking-widest text-brand-cherry group-hover:text-brand-olive transition-colors">Read Article</span>
+            <span class="w-9 h-9 rounded-full bg-brand-linenLight group-hover:bg-brand-olive text-brand-cherry group-hover:text-white flex items-center justify-center transition-all">
+              <i data-lucide="arrow-up-right" class="w-4 h-4"></i>
+            </span>
+          </div>
+        </a>
+        
+        <a href="journal-what-to-wear-guide.html" class="service-card group overflow-hidden flex flex-col justify-between cursor-pointer no-underline">
           <div>
-            <div class="aspect-video overflow-hidden mb-6 bg-brand-linen">
-              <img src="https://static.showit.com/1200/dcskXyE-x0GWp-JDJuKLOA/339870/img_3720.jpg" alt="What to Wear" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+            <div class="relative h-56 overflow-hidden bg-brand-cherryDark">
+              <img src="assets/images/leak-detection.jpg" alt="Early Signs of Hidden Pipe Leaks & How to Protect Your Building" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
             </div>
-            <span class="text-[10px] tracking-widest uppercase text-brand-olive font-semibold block mb-2">Style Guide</span>
-            <h3 class="font-serif text-2xl text-brand-cherry mb-3">What to Wear for Your Couples &amp; Engagement Session</h3>
-            <p class="text-xs text-gray-600 leading-relaxed font-light mb-6 text-justify">
-              How to coordinate colors without matching completely. Earth tones, felt hats, suede, and dressing for movement.
-            </p>
+            <div class="p-7">
+              <span class="text-[11px] tracking-widest uppercase text-brand-olive font-bold block mb-2">Leak Detection & Piping</span>
+              <h3 class="font-serif text-xl sm:text-2xl text-brand-cherry font-bold mb-3 group-hover:text-brand-olive transition-colors">
+                Early Signs of Hidden Pipe Leaks & How to Protect Your Building
+              </h3>
+              <p class="text-slate-600 text-sm leading-relaxed">
+                Spotting wall dampness, low water pressure, and underground pipe seepage before structural damage occurs.
+              </p>
+            </div>
           </div>
-          <a href="journal-what-to-wear-guide.html" class="text-[11px] tracking-widest uppercase font-semibold text-brand-cherry hover:underline">Read Article &rarr;</a>
-        </article>
-
-        <!-- Post 3 -->
-        <article class="group bg-white border border-brand-linen p-6 rounded-2xl flex flex-col justify-between hover:border-brand-cherry transition-all" id="post-3" onclick="window.location='journal-ozarks-elopement-spots.html'" class="cursor-pointer">
+          <div class="px-7 pb-7 pt-4 border-t border-slate-100 flex items-center justify-between">
+            <span class="text-xs font-extrabold uppercase tracking-widest text-brand-cherry group-hover:text-brand-olive transition-colors">Read Article</span>
+            <span class="w-9 h-9 rounded-full bg-brand-linenLight group-hover:bg-brand-olive text-brand-cherry group-hover:text-white flex items-center justify-center transition-all">
+              <i data-lucide="arrow-up-right" class="w-4 h-4"></i>
+            </span>
+          </div>
+        </a>
+        
+        <a href="journal-ozarks-elopement-spots.html" class="service-card group overflow-hidden flex flex-col justify-between cursor-pointer no-underline">
           <div>
-            <div class="aspect-video overflow-hidden mb-6 bg-brand-linen">
-              <img src="https://static.showit.com/1200/x1me3MZvQrWhCdlVKa6ijA/339870/g0a4177.jpg" alt="Elopement Spots" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+            <div class="relative h-56 overflow-hidden bg-brand-cherryDark">
+              <img src="assets/images/bathroom-kitchen.jpg" alt="Keeping Bathroom, Kitchen & Drainage Systems Flowing Smoothly" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
             </div>
-            <span class="text-[10px] tracking-widest uppercase text-brand-olive font-semibold block mb-2">Locations</span>
-            <h3 class="font-serif text-2xl text-brand-cherry mb-3">The Best Hidden Elopement Locations in Southwest Missouri</h3>
-            <p class="text-xs text-gray-600 leading-relaxed font-light mb-6 text-justify">
-              Our favorite bluff lines, prairie reserves, and secret springs that offer total intimacy and breathtaking backdrops.
-            </p>
+            <div class="p-7">
+              <span class="text-[11px] tracking-widest uppercase text-brand-olive font-bold block mb-2">Bathroom, Kitchen & Drains</span>
+              <h3 class="font-serif text-xl sm:text-2xl text-brand-cherry font-bold mb-3 group-hover:text-brand-olive transition-colors">
+                Keeping Bathroom, Kitchen & Drainage Systems Flowing Smoothly
+              </h3>
+              <p class="text-slate-600 text-sm leading-relaxed">
+                Best practices for faucet and toilet repair, preventive drain cleaning, and modern kitchen plumbing upgrades.
+              </p>
+            </div>
           </div>
-          <a href="journal-ozarks-elopement-spots.html" class="text-[11px] tracking-widest uppercase font-semibold text-brand-cherry hover:underline">Read Article &rarr;</a>
-        </article>
-
+          <div class="px-7 pb-7 pt-4 border-t border-slate-100 flex items-center justify-between">
+            <span class="text-xs font-extrabold uppercase tracking-widest text-brand-cherry group-hover:text-brand-olive transition-colors">Read Article</span>
+            <span class="w-9 h-9 rounded-full bg-brand-linenLight group-hover:bg-brand-olive text-brand-cherry group-hover:text-white flex items-center justify-center transition-all">
+              <i data-lucide="arrow-up-right" class="w-4 h-4"></i>
+            </span>
+          </div>
+        </a>
+        
       </div>
     </div>
   </section>
 
-
-  <!-- FOOTER: Streamlined Minimal Bar (All Rights Reserved Only) -->
-  <footer class="w-full bg-brand-cherry text-brand-linenLight rounded-t-3xl py-6 sm:py-7 px-6 text-center border-t border-white/20">
-    <div class="max-w-7xl mx-auto text-[11px] sm:text-xs text-brand-linen/80 tracking-widest uppercase font-light">
-      <p>&copy; Vera Range Photography. All Rights Reserved.</p>
+  <!-- FOOTER -->
+  <footer class="w-full bg-brand-cherry text-brand-linenLight rounded-t-3xl py-8 px-5 sm:px-10 lg:px-16 text-center border-t border-white/20">
+    <div class="w-full flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-white/90 tracking-wider uppercase">
+      <p class="font-bold">&copy; HERQUACORE Plumbing &amp; Borehole Services. All Rights Reserved.</p>
+      <p class="text-sky-200">Ushafa, Bwari Area Council, Abuja &bull; 09031380573</p>
     </div>
   </footer>
 
-  <!-- Floating Mobile WhatsApp & Email Widgets -->
+  <!-- Floating Mobile WhatsApp & Call Widgets -->
   <div class="fixed bottom-20 right-4 z-40 floating-widget flex flex-col gap-3 md:bottom-8 md:right-8">
-    <a href="https://wa.me/14175550199?text=Hi%20Miley!%20I%20saw%20your%20journal%20posts%20and%20would%20love%20to%20connect." target="_blank" rel="noopener noreferrer" class="w-11 h-11 sm:w-12 sm:h-12 rounded-full bg-[#25D366] text-white flex items-center justify-center shadow-2xl hover:scale-110 transition-transform">
-      <i data-lucide="message-circle" class="w-5 h-5 sm:w-6 sm:h-6"></i>
+    <a href="https://wa.me/2349031380573" target="_blank" rel="noopener noreferrer" class="w-12 h-12 rounded-full bg-[#25D366] text-white flex items-center justify-center shadow-2xl hover:scale-110 transition-transform" aria-label="Chat on WhatsApp">
+      <i data-lucide="message-circle" class="w-6 h-6"></i>
     </a>
-    <a href="mailto:verarangephotography@gmail.com?subject=Blog%20Inquiry" class="w-11 h-11 sm:w-12 sm:h-12 rounded-full bg-brand-cherry text-white flex items-center justify-center shadow-2xl hover:scale-110 transition-transform border border-white/20">
-      <i data-lucide="mail" class="w-5 h-5"></i>
+    <a href="tel:09031380573" class="w-12 h-12 rounded-full bg-brand-olive text-white flex items-center justify-center shadow-2xl hover:scale-110 transition-transform border border-white/20" aria-label="Call 09031380573">
+      <i data-lucide="phone" class="w-5 h-5"></i>
     </a>
   </div>
 
-  <!-- FLOATING BOTTOM MOBILE NAVBAR: Rounded Maroon Floating Bar with Dark/Light Toggle -->
+  <!-- FLOATING BOTTOM MOBILE NAVBAR -->
   <nav class="fixed z-50 mobile-bottom-navbar flex md:hidden items-center justify-around text-brand-ivory shadow-2xl">
     <a href="index.html" class="flex flex-col items-center flex-1 py-1">
       <i data-lucide="home" class="w-4 h-4 mb-0.5"></i>
       <span class="text-[8.5px] tracking-wider uppercase">Home</span>
     </a>
+    <a href="services.html" class="flex flex-col items-center flex-1 py-1">
+      <i data-lucide="wrench" class="w-4 h-4 mb-0.5"></i>
+      <span class="text-[8.5px] tracking-wider uppercase">Services</span>
+    </a>
     <a href="portfolio.html" class="flex flex-col items-center flex-1 py-1">
-      <i data-lucide="camera" class="w-4 h-4 mb-0.5"></i>
-      <span class="text-[8.5px] tracking-wider uppercase">Portfolio</span>
+      <i data-lucide="layers" class="w-4 h-4 mb-0.5"></i>
+      <span class="text-[8.5px] tracking-wider uppercase">Projects</span>
     </a>
     <a href="about.html" class="flex flex-col items-center flex-1 py-1">
-      <i data-lucide="heart" class="w-4 h-4 mb-0.5"></i>
+      <i data-lucide="info" class="w-4 h-4 mb-0.5"></i>
       <span class="text-[8.5px] tracking-wider uppercase">About</span>
-    </a>
-    <a href="services.html" class="flex flex-col items-center flex-1 py-1">
-      <i data-lucide="sparkles" class="w-4 h-4 mb-0.5"></i>
-      <span class="text-[8.5px] tracking-wider uppercase">Services</span>
     </a>
     <a href="blog.html" class="flex flex-col items-center flex-1 py-1 active-nav-item">
       <i data-lucide="book-open" class="w-4 h-4 mb-0.5"></i>
-      <span class="text-[8.5px] tracking-wider uppercase">Journal</span>
+      <span class="text-[8.5px] tracking-wider uppercase">Blog</span>
     </a>
     <a href="inquire.html" class="flex flex-col items-center flex-1 py-1">
-      <i data-lucide="send" class="w-4 h-4 mb-0.5"></i>
-      <span class="text-[8.5px] tracking-wider uppercase">Inquire</span>
+      <i data-lucide="phone-call" class="w-4 h-4 mb-0.5"></i>
+      <span class="text-[8.5px] tracking-wider uppercase">Contact</span>
     </a>
   </nav>
 
   <script>
     lucide.createIcons();
-    const btn = document.getElementById('mobileMenuBtn');
-    const menu = document.getElementById('mobileMenu');
-    if (btn && menu) btn.addEventListener('click', () => menu.classList.toggle('hidden'));
   </script>
   <script src="motion.js"></script>
 </body>

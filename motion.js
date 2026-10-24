@@ -1,5 +1,5 @@
 /**
- * Vera Range Motion Engine
+ * HERQUACORE Motion Engine
  * Lightweight, high-performance IntersectionObserver animation driver
  */
 document.addEventListener('DOMContentLoaded', () => {
