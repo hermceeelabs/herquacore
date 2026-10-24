@@ -11,7 +11,7 @@ header#siteHeader {
   background-color: rgba(255, 255, 255, 0.96) !important;
   backdrop-filter: blur(12px) !important;
   -webkit-backdrop-filter: blur(12px) !important;
-  border-bottom: 2.5px solid #0B3C74 !important;
+  border-bottom: 2.5px solid #D94E28 !important;
   border-bottom-left-radius: 20px !important;
   border-bottom-right-radius: 20px !important;
   box-shadow: 0 4px 20px -4px rgba(11, 60, 116, 0.12) !important;
@@ -31,7 +31,7 @@ header#siteHeader + main {
   background-color: rgba(11, 60, 116, 0.98) !important;
   backdrop-filter: blur(14px) !important;
   -webkit-backdrop-filter: blur(14px) !important;
-  border-bottom: 2px solid rgba(217, 78, 40, 0.9) !important;
+  border-bottom: 2.5px solid #D94E28 !important;
   border-bottom-left-radius: 20px !important;
   border-bottom-right-radius: 20px !important;
   box-shadow: 0 10px 30px -10px rgba(7, 40, 79, 0.4) !important;
@@ -100,15 +100,16 @@ header#siteHeader + main {
 }
 
 .header-scrolled .header-cta-btn {
-  background-color: #D94E28 !important;
-  color: #FFFFFF !important;
-  border: 1px solid rgba(255, 255, 255, 0.35) !important;
+  background-color: #FFFFFF !important;
+  color: #0B3C74 !important;
+  border: 1px solid #FFFFFF !important;
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.25) !important;
 }
 
 .header-scrolled .header-cta-btn:hover {
-  background-color: #FFFFFF !important;
-  color: #0B3C74 !important;
+  background-color: #D94E28 !important;
+  color: #FFFFFF !important;
+  border-color: #D94E28 !important;
 }
 
 /* Footer: Corporate Navy (#0B3C74) with rounded top corners */
@@ -130,35 +131,31 @@ footer {
   box-shadow: 0 -6px 20px rgba(7, 40, 79, 0.18) !important;
 }
 
-/* Mobile Header (< 768px): Unified brand mark across all pages */
+/* Mobile Header (< 768px): Non-sticky, clean brand mark across all pages */
 @media (max-width: 767px) {
+  header#siteHeader,
   header#siteHeader.header-transparent,
-  .header-transparent {
-    background: rgba(255, 255, 255, 0.96) !important;
-    backdrop-filter: blur(12px) !important;
-    -webkit-backdrop-filter: blur(12px) !important;
-    border-bottom: 2px solid #0B3C74 !important;
+  header#siteHeader.header-scrolled {
+    position: relative !important;
+    top: auto !important;
+    background: rgba(255, 255, 255, 0.98) !important;
+    border-bottom: 2.5px solid #D94E28 !important;
     border-bottom-left-radius: 16px !important;
     border-bottom-right-radius: 16px !important;
     box-shadow: 0 4px 16px rgba(11, 60, 116, 0.1) !important;
   }
 
+  header#siteHeader .logo-title,
+  header#siteHeader.header-scrolled .logo-title {
+    color: #0B3C74 !important;
+    text-shadow: none !important;
+  }
+
   header#siteHeader + section,
   header#siteHeader + article,
   header#siteHeader + main {
-    margin-top: 0 !important;
-  }
-
-  /* Scrolled mobile header: compact, blurred corporate navy bar */
-  header#siteHeader.header-scrolled,
-  .header-scrolled {
-    background-color: rgba(11, 60, 116, 0.98) !important;
-    backdrop-filter: blur(14px) !important;
-    -webkit-backdrop-filter: blur(14px) !important;
-    border-bottom: 2px solid #D94E28 !important;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25) !important;
-    border-bottom-left-radius: 16px !important;
-    border-bottom-right-radius: 16px !important;
+    margin-top: -20px !important;
+    padding-top: calc(2.5rem + 20px) !important;
   }
 
   /* Hide traditional desktop footer on mobile screens (the floating bottom navbar handles navigation) */
